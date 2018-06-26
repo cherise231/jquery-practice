@@ -6,11 +6,12 @@
 // 3. Add a dividing function
 
 
+
+
+// Function to add 2 Numbers
 $(document).ready(  function() {
-  
-   $("button").click ( function () {
-     
-     
+   $("#add").click ( function () {
+     console.log("found the add button");
      
     var firstNumber = parseInt($("#firstNumber").val());
     var secondNumber = parseInt($("#secondNumber").val());
@@ -30,7 +31,28 @@ $(document).ready(  function() {
      console.log(sum);
    
    } );
+
+   $("#subtract").click ( function () {
+     console.log("found the add button");
+     
+    var firstNumber = parseInt($("#firstNumber").val());
+    var secondNumber = parseInt($("#secondNumber").val());
    
+    
+    var sum = parseInt($("sum").val());
+    
+    diff = firstNumber - secondNumber;
+    
+    $("#total").val(sum);
+    
+   
+   
+    //$("#output").text(sum);
+    
+     
+     console.log(sum);
+   
+   } );
    
    
 } );
