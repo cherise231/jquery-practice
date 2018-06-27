@@ -9,7 +9,6 @@
 
 
 // Function to add 2 Numbers
-/*
 $(document).ready(  function() {
    $("#add").click ( function () {
      //console.log("found the add button");
@@ -103,5 +102,5 @@ $(document).ready(  function() {
    
 } );
 
-*/
+
 

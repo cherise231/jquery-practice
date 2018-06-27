@@ -1,5 +1,9 @@
 /* global $ */
 
+
+
+
+
 //add 2 numbers function
 $(document).ready(  function() {
   
