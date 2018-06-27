@@ -1,3 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+
 body {
-  background-color: cornflowerblue;
+  background-color: white;
+  font-family: "Noto Sans", serif;
+}
+
+/*.circle {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+*/
+.mathimage1 img {
+    
+    width: 10%;/* 300, 450 original*/
+    height: 10%;
+    margin: 20px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#calc-header {
+    font-family: 'Noto Sans', serif;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 2;
+    text-align: center;
+    color: navy;
+    padding: 30px;
+
+}
+
+.row1add {
+    
+    border: none;
+    padding: 30px;
+}
+
+.row2sub {
+    
+    border: none;
+    padding: 30px;
+}
+
+.row3mult {
+    
+    border: none;
+    padding: 30px;
+}
+
+.row4div {
+    
+    border: none;
+    padding: 30px 30px 100px 30px;
 }
