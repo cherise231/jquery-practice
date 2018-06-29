@@ -1,0 +1,84 @@
+
+<!doctype html>
+
+<!-- template for adding javascript and css and html to one page -->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Test Page</title>
+  <meta name="description" content="Test Page">
+  <meta name="author" content="Test Page">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  
+  <style>
+  /*vvvvvvvv CSS GOES BELOW THIS COMMENT vvvvvvvv*/
+  
+  #firstImage {
+    width: 150px;
+  }
+  
+
+  .big {
+    width: 600px;
+  }
+  
+  .small {
+    width: 150px;
+  }
+ 
+  /*^^^^^^^^ CSS GOES ABOVE THIS COMMENT ^^^^^^^^*/
+  </style>
+
+</head>
+
+<body>
+  <!-- vvvvvvvv HTML GOES BELOW THIS COMMENT vvvvvvvv -->
+    
+    <p><img id="firstImage" src="island1.jpeg"></p>
+  
+  
+  <!-- ^^^^^^^^ HTML GOES ABOVE THIS COMMENT ^^^^^^^^ -->
+  
+  <script>
+    /*global $*/
+    /*vvvvvvvv JAVASCRIPT GOES BELOW THIS COMMENT vvvvvvvv*/
+    
+    $(document).ready(function () {
+      
+    //learning new jquery function toggle and hover function
+    
+    $( "#firstImage" ).click(function() {
+      
+    var currentWidth = $("#firstImage").css("width");
+      
+    //console.log(currentWidth);
+    
+    if (currentWidth == "150px") {
+      
+      var image = $("#firstImage");
+      image.css("width", "600px");
+      
+      $("#firstImage").css("width", "600px");
+      
+    } else if (currentWidth == "600px") {
+      
+      $("#firstImage").css("width", "150px");
+      
+    }
+      
+    //$( "p" ).toggle( "slow", function() {
+    // Animation complete.
+    
+   
+    });
+      
+    });
+    
+    /*^^^^^^^^ JAVASCRIPT GOES ABOVE THIS COMMENT ^^^^^^^^*/
+    
+  </script>
+</body>
+</html>
