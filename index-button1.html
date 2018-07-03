@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Index Template Page</title>
+  <title>Index Gallery Page</title>
   <meta name="description" content="Test Page">
   <meta name="author" content="Test Page">
   
@@ -16,6 +16,7 @@
   <style>
   /*vvvvvvvv CSS GOES BELOW THIS COMMENT vvvvvvvv*/
   
+ /*
   #firstImage {
     width: 150px;
   }
@@ -28,6 +29,7 @@
   .small {
     width: 150px;
   }
+ */
  
   /*^^^^^^^^ CSS GOES ABOVE THIS COMMENT ^^^^^^^^*/
   </style>
@@ -37,42 +39,19 @@
 <body>
   <!-- vvvvvvvv HTML GOES BELOW THIS COMMENT vvvvvvvv -->
     
-    <p><img id="firstImage" src="island1.jpeg"></p>
+    <!--<p><img id="firstImage" src="island1.jpeg"></p> -->
   
-  
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    
   <!-- ^^^^^^^^ HTML GOES ABOVE THIS COMMENT ^^^^^^^^ -->
   
   <script>
     /*global $*/
     /*vvvvvvvv JAVASCRIPT GOES BELOW THIS COMMENT vvvvvvvv*/
-    
-    $(document).ready(function () {
-      
-    //learning new jquery function toggle and hover function
-    
-    $( "#firstImage" ).click(function() {
-      
-    var currentWidth = $("#firstImage").css("width");
-      
-    //console.log(currentWidth);
-    
-    if (currentWidth == "150px") {
-      
-      var image = $("#firstImage");
-      image.css("width", "600px");
-      
-      $("#firstImage").css("width", "600px");
-      
-    } else if (currentWidth == "600px") {
-      
-      $("#firstImage").css("width", "150px");
-      
-    }
-    //$( "p" ).toggle( "slow", function() {
-    // Animation complete.
-    
-   
-    });
+    $("button").click( function () {
+      $(this).remove();
       
     });
     

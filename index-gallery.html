@@ -1,0 +1,148 @@
+
+<!doctype html>
+
+<!-- template for adding javascript and css and html to one page -->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Index Gallery Practice</title>
+  <meta name="description" content="Test Page">
+  <meta name="author" content="Test Page">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  
+  <style>
+  /*vvvvvvvv CSS GOES BELOW THIS COMMENT vvvvvvvv*/
+  
+ /*
+  #firstImage {
+    width: 150px;
+  }
+  
+
+  .big {
+    width: 600px;
+  }
+  
+  .small {
+    width: 150px;
+  }
+ */
+ 
+  /*^^^^^^^^ CSS GOES ABOVE THIS COMMENT ^^^^^^^^*/
+  </style>
+
+</head>
+
+<body>
+  <!-- vvvvvvvv HTML GOES BELOW THIS COMMENT vvvvvvvv -->
+    
+    <!--<p><img id="firstImage" src="island1.jpeg"></p> -->
+  
+    <button id="thentherewaslight">Make the Page</button>
+    
+  <!-- ^^^^^^^^ HTML GOES ABOVE THIS COMMENT ^^^^^^^^ -->
+  
+  <script>
+    /*global $*/
+    /*vvvvvvvv JAVASCRIPT GOES BELOW THIS COMMENT vvvvvvvv*/
+     $(document).ready(function () {  //invokes jquery
+        
+        $("#thentherewaslight").click( function() {
+        
+       console.log("hello!");
+       
+       var body = $("body"); 
+       
+       //body.html("<p id =\"firsttext\"> Hello, I was created when jQuery ran! </p>");  
+       body.append("<p id =\"firsttext\"> Hello, I was created when jQuery ran! </p>");  // please put stuff in contents of body
+       $("#firsttext").css("color", "lightblue"); //sets html
+       
+       body.append("<h1 id=\"top\">This is the second element created using jQuery </h1>"); //give h1 id top
+       
+       //Edit AFTER creating the element
+       $("#top").css("color", "pink");
+       /*var myString = "Hello this is the start," + "and this is the end"; */
+      
+      var myString = "<ol>" +
+      "<li>Happy</li>" +
+      "<li>Smile</li>" +
+      "</ol>";
+       
+      body.append(myString); //calling the var myString
+      
+      
+      body.append('<img src="beach1.jpeg" >');
+      
+      var myDiv = "<div id='myDiv'><button id='delete'>Delete this box</button></div>"; //put div in a string and add button
+      
+      
+      body.append(myDiv); // pass thru jquery
+      
+      $("#delete").click(function (){
+        
+        $("#myDiv").remove();
+        
+      });
+      
+      $("#myDiv").css("width", "200px");
+      $("#myDiv").css("height", "200px");
+      $("#myDiv").css("background-color", "lightblue");
+      
+      $("#myDiv").css("position", "absolute"); //moves box to top left of page makes box stay in one place
+      $("#myDiv").css("top", "20px");
+      $("#myDiv").css("left", "100px");
+      
+      // Advanced way of changing multiple properties with one jQuery selector
+    
+      $("#myDiv").css({
+      "border-size" : "2px",
+      "border-style" : "dashed",
+      "border-color" : "pink",
+      "margin" : "40px"
+      });
+
+    });
+      
+  });
+     
+    
+    /*
+    $(document).ready(function () {
+      
+    //learning new jquery function toggle and hover function
+    
+    $( "#firstImage" ).click(function() {
+      
+    var currentWidth = $("#firstImage").css("width");
+      
+    //console.log(currentWidth);
+    
+    if (currentWidth == "150px") {
+      
+      var image = $("#firstImage");
+      image.css("width", "600px");
+      
+      $("#firstImage").css("width", "600px");
+      
+    } else if (currentWidth == "600px") {
+      
+      $("#firstImage").css("width", "150px");
+      
+    }
+    //$( "p" ).toggle( "slow", function() {
+    // Animation complete.
+    
+   
+    });
+      
+    });
+    */
+    
+    /*^^^^^^^^ JAVASCRIPT GOES ABOVE THIS COMMENT ^^^^^^^^*/
+    
+  </script>
+</body>
+</html>
